@@ -1,0 +1,168 @@
+body {		
+	background-color: #eeeeee;
+	font-family: "Helvetica";
+}
+table.nav { 
+	width: 100%;
+	margin: 0 0 0 0;
+}
+nav { 
+	position: sticky;
+	top:5px;
+	left:0px;
+	background-color: #eeeeee;
+	padding: 0.5vw 0.5vw 0.5vw 0.5vw;
+	margin: 0 0 0 0;
+	filter:drop-shadow(8px 8px 10px gray);
+	z-index: 1;
+}
+td.nav {
+	background-color: #bbbbbb;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+	text-align: center;
+	font-weight: bold;
+	border-radius: 3px;
+}
+td.nav:hover {
+	background-color: #aaaaaa;
+}
+td.nav:active {
+	background-color: #bbbbbb;
+}
+img.imgNav {
+	display:block;
+	width: 50vw;
+	height: 50vw;
+	margin: 0 0 0 0;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 0 0 0;
+}
+p {
+	text-indent:25px;
+}
+div.letter {
+	font-family: "Times New Roman";
+	padding: 2.5vw 5vw 2.5vw 5vw;
+	background-color: rgba(255, 255, 255, 0.3);
+	max-width: 500px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	float: left;
+}
+div.signature {
+	font-family: "Brush Script MT";
+	padding: 0 0 0 0;
+	font-size: 51px;
+	background-color: rgba(255, 255, 255, 0);
+	max-width: 500px;
+}
+div.donate {
+	float: left;
+	width: 95%;
+	padding: 5px 5px 5px 5px;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+.container {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 22px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.container input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+.checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 25px;
+	width: 25px;
+	background-color: #eee;
+}
+.container:hover input ~ .checkmark {
+	background-color: #ccc;
+}
+.container input:checked ~ .checkmark {
+	background-color: #2196F3;
+}
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+.container input:checked ~ .checkmark:after {
+	display: block;
+}
+.container .checkmark:after {
+	left: 9px;
+	top: 5px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+div.info {
+	margin: 10px 10px 10px 10px;
+	background-color: rgba(255, 255, 255, 0.3);
+	padding: 5px 12px 5px 5px;
+}
+img.tpp {
+	float:left;
+	height:100px;
+	width:auto;
+	padding-left:10px;
+	padding-bottom:10px;
+	max-width:100%;
+}
+.defaultTextBox {
+    padding: 0;
+    height: 30px;
+    position: relative;
+    left: 0;
+    outline: none;
+    border: 1px solid #cdcdcd;
+    border-color: rgba(0,0,0,.15);
+    background-color: white;
+    font-size: 16px;
+}
+.advancedSearchTextbox {
+    width: 526px;
+    margin-right: -4px;
+}
+li {
+	padding-left: 10px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+a {
+	text-decoration: none;
+	border-left: 4px solid blue;
+	border-radius: 3px;
+	background-color: #cdcdee;
+	padding: 5px;
+	margin-top: 3px;
+	color: black;
+	font-family: "Helvetica";
+}
+a:active {
+	border-left: 4px solid red;
+	background-color: #eecdcd;
+}
