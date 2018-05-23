@@ -47,7 +47,7 @@ div.letter {
 	padding: 2.5vw 5vw 2.5vw 5vw;
 	background-color: rgba(255, 255, 255, 0.3);
 	max-width: 500px;
-	margin-right: 10px;
+	/*margin-right: 10px;*/
 	margin-bottom: 10px;
 	float: left;
 }
@@ -165,4 +165,8 @@ a {
 a:active {
 	border-left: 4px solid red;
 	background-color: #eecdcd;
+}
+a:visited {
+	border-left: 4px solid purple;
+	background-color: #eecdee;
 }
