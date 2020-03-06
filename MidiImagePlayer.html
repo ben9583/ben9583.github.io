@@ -17,7 +17,7 @@
 		    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
 
 		}
-		.music_img {
+		#musicImage {
 			display: inline-block;
 			height:400px;
 			width: 12755px;
@@ -50,7 +50,7 @@
 <body>
 	<h1 id="title">MIDI Image Player</h1>
 	<div id="musicContainer">
-		<img class="music_img" id="musicImage" style="position:relative;left:218px" src="Images/out.png" />
+		<img id="musicImage" style="position:relative;left:218px" src="Images/out.png" />
 		<div id="cover"></div>
 	</div>
 	<audio id="audioHolder" preload="preload">
@@ -77,15 +77,15 @@
 		var shiftTask;
 
 		function shiftifyImage() {
-			var left = parseInt(imageTag.style["left"].substring(0, imageTag.style["left"].length - 2));
-			left -= 1;
+			//var left = parseInt(imageTag.style["left"].substring(0, imageTag.style["left"].length - 2));
+			var left = 218-((audioTag.currentTime/audioTag.duration)*imageTag.style["width"])
+			//left -= 1;
 			imageTag.style["left"] = left + "px";
 		}
 
 		function playMusic() {
 			if(!toggled) {
 				audioTag.play();
-				shiftTask = setInterval(shiftifyImage, 20)
 
 				toggled = true;
 			}
@@ -93,7 +93,6 @@
 		function pauseMusic() {
 			if(toggled) {
 				audioTag.pause();
-				clearInterval(shiftTask)
 
 				toggled = false;
 			}
@@ -111,6 +110,23 @@
 		playTag.addEventListener("click", playMusic);
 		pauseTag.addEventListener("click", pauseMusic);
 		stopTag.addEventListener("click", stopMusic);
+
+		audioTag.play = function() {
+			shiftTask = setInterval(shiftifyImage, 20)
+		}
+
+		audioTag.pause = function() {
+			clearInterval(shiftTask)
+		}
+
+		audioTag.waiting = function() {
+			clearInterval(shiftTask)
+		}
+
+		audioTag.playing = function() {
+			shiftTask = setInterval(shiftifyImage, 20)
+		}
+
 		audioTag.onended = stopMusic;
 	</script>
 </body>
