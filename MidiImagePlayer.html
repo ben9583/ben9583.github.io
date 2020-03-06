@@ -20,7 +20,6 @@
 		#musicImage {
 			display: inline-block;
 			height:400px;
-			width: 12755px;
 			overflow-x:hidden;
 		}
 		#title {
@@ -50,7 +49,7 @@
 <body>
 	<h1 id="title">MIDI Image Player</h1>
 	<div id="musicContainer">
-		<img id="musicImage" style="position:relative;left:218px" src="Images/out.png" />
+		<img id="musicImage" style="position:relative;left:218px;width:12755px;" src="Images/out.png" />
 		<div id="cover"></div>
 	</div>
 	<audio id="audioHolder" preload="preload">
@@ -77,15 +76,16 @@
 		var shiftTask;
 
 		function shiftifyImage() {
-			//var left = parseInt(imageTag.style["left"].substring(0, imageTag.style["left"].length - 2));
-			var left = 218-((audioTag.currentTime/audioTag.duration)*imageTag.style["width"])
-			//left -= 1;
+			var left = 218-((audioTag.currentTime*1.008/audioTag.duration)*parseInt(imageTag.style["width"].substring(0, imageTag.style["width"].length - 2)))
+			//console.log(imageTag.style["width"].substring(0, imageTag.style["width"] - 2));
+			console.log(imageTag.style["width"].substring(0, imageTag.style["width"].length - 2))
 			imageTag.style["left"] = left + "px";
 		}
 
 		function playMusic() {
 			if(!toggled) {
 				audioTag.play();
+				shiftTask = setInterval(shiftifyImage, 20)
 
 				toggled = true;
 			}
@@ -93,6 +93,7 @@
 		function pauseMusic() {
 			if(toggled) {
 				audioTag.pause();
+				clearInterval(shiftTask)
 
 				toggled = false;
 			}
@@ -110,23 +111,6 @@
 		playTag.addEventListener("click", playMusic);
 		pauseTag.addEventListener("click", pauseMusic);
 		stopTag.addEventListener("click", stopMusic);
-
-		audioTag.play = function() {
-			shiftTask = setInterval(shiftifyImage, 20)
-		}
-
-		audioTag.pause = function() {
-			clearInterval(shiftTask)
-		}
-
-		audioTag.waiting = function() {
-			clearInterval(shiftTask)
-		}
-
-		audioTag.playing = function() {
-			shiftTask = setInterval(shiftifyImage, 20)
-		}
-
 		audioTag.onended = stopMusic;
 	</script>
 </body>
