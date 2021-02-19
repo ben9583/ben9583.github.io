@@ -1,0 +1,17 @@
+body {
+	font-family: "Helvetica";
+	background-color: rgb(13, 17, 23);
+	color: rgb(201, 209, 217);
+	margin: 2.5%;
+}
+
+div.centered-content {
+	margin: auto;
+}
+
+h1.title {
+	font-size: 10vh;
+	width: 100%;
+	display: block;
+	text-align: center;
+}
