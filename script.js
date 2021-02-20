@@ -14,7 +14,7 @@ window.addEventListener("load", function() {
 	}, 2000);
 	
 	var delay = 2750;
-	document.getElementById("skip-button").addEventListener("click", function() {
+	document.getElementById("skip-button").addEventListener("click", function(elem) {
 		noAnim = true
 		timeouts.forEach(function(i) {
 			clearTimeout(i);
@@ -22,7 +22,9 @@ window.addEventListener("load", function() {
 		document.getElementById("aboutme-description").innerHTML = aboutMeText;
 		document.getElementById("projects-description").innerHTML = projectsFinal;
 		document.getElementById("project-list").style.opacity = 1;
-	})
+		
+		elem.target.removeEventListener(elem.type, arguments.callee);
+	});
 	
 	animateTextArray(aboutMeArr, document.getElementById("aboutme-description"), delay);
 	var newDelay = animateTextArray(projectsArr, document.getElementById("projects-description"), delay);
