@@ -126,11 +126,18 @@ a:visited {
 	color: #3F47B7;
 }
 
-p.contact-type {
-	line-height: 1em;
+ul#contact-list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
 }
 
-p.contact-value {
+li.contact-type {
+	line-height: 1em;
+	margin-bottom: 10px;
+}
+
+li.contact-value {
 	line-height: 1em;
 	font-wright: bold;
 	font-size: 3em;
