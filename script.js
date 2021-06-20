@@ -1,3 +1,5 @@
+/* Created by Ben Plate (ben9583) */
+
 window.addEventListener("load", function() {
 	setTimeout(function() {
 		document.getElementById("website-title").style.opacity = 1;
