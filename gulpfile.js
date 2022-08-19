@@ -9,7 +9,7 @@ gulp.task("generate-service-worker", () => {
     cacheId: "yourCacheID",
     globDirectory: "./public", // the directory where static file is stored
     swDest: "./public/sw.js", // destination of sw.js file
-    globPatterns: ["**/*.{js,css,html,ico,png,jpg,jpeg,svg,webp,json,mp3,xml,gif,bmp}"],
+    globPatterns: ["**/*.{js,css,html}"],
     navigateFallback: "/404.html", // fallback file
     runtimeCaching: [
       {

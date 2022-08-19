@@ -14,7 +14,7 @@ enableRobotsTXT = true
   avatarURL = "/images/avatar.webp"
   avatarSize = "size-m"
   customHeadHTML = """
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="theme-color" content="#22272e" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="manifest" href="manifest.json" />
     <!-- KaTeX -->
