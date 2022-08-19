@@ -13,11 +13,11 @@ gulp.task("generate-service-worker", () => {
     navigateFallback: "/404.html", // fallback file
     runtimeCaching: [
       {
-        urlPattern: /\.(?:png|jpg|jpeg|gif|bmp|webp|svg|ico)$/,
+        urlPattern: /\.(?:png|jpg|jpeg|gif|bmp|webp|svg|ico)\/?$/,
         handler: "CacheFirst",
       },
       {
-        urlPattern: /\.(?:json|xml)$/,
+        urlPattern: /\.(?:json|xml)\/?$/,
         handler: "NetworkOnly",
       },
     ],
