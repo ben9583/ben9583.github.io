@@ -1,0 +1,17 @@
+{
+  "name": "ben-plate-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp build"
+  },
+  "keywords": [],
+  "author": "Ben Plate",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-shell": "^0.8.0",
+    "workbox-build": "^6.5.4"
+  }
+}
