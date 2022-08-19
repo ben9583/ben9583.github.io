@@ -71,6 +71,12 @@ enableRobotsTXT = true
     url = "https://github.com/ben9583"
     weight = 5
 
+  [[menu.main]]
+    identifier = "rss"
+    pre = "<span data-feather='rss'></span>"
+    url = "/index.xml"
+    weight = 6
+
 [markup]
   [markup.tableOfContents]
     startLevel = 1
