@@ -1,6 +1,6 @@
 ---
-title: Chess AI Project
-type: page
+title: "Chess AI Project"
+type: "page"
 ---
 
 GitHub: [ben9583/chess-ai](https://github.com/ben9583/chess-ai)

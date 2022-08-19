@@ -1,6 +1,6 @@
 ---
-title: Solar Sim 🪐
-type: page
+title: "Solar Sim 🪐"
+type: "page"
 ---
 
 GitHub: [ben9583/solar-sim](https://github.com/ben9583/solar-sim)

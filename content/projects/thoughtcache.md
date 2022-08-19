@@ -1,6 +1,6 @@
 ---
-title: ThoughtCache
-type: page
+title: "ThoughtCache"
+type: "page"
 ---
 
 GitHub: [ben9583/ThoughtCache](https://github.com/ben9583/ThoughtCache)

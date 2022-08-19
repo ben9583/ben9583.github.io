@@ -1,6 +1,6 @@
 ---
-title: MC_DepthNN
-type: page
+title: "MC_DepthNN"
+type: "page"
 ---
 
 GitHub: [ben9583/MC_DepthNN](https://github.com/ben9583/MC_DepthNN)

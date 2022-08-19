@@ -1,6 +1,6 @@
 ---
-title: Authorization Tests
-type: page
+title: "Authorization Tests"
+type: "page"
 ---
 
 GitHub: [ben9583/authorization-tests](https://github.com/ben9583/authorization-tests)

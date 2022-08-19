@@ -1,6 +1,6 @@
 ---
-title: Minecraft-Discord Bridge
-type: page
+title: "Minecraft-Discord Bridge"
+type: "page"
 ---
 
 GitHub: [ben9583/Minecraft-Discord-Bridge](https://github.com/ben9583/Minecraft-Discord-Bridge)

@@ -1,6 +1,6 @@
 ---
-title: Matrix Equivalence Classes
-type: page
+title: "Matrix Equivalence Classes"
+type: "page"
 ---
 
 GitHub: [ben9583/matrix-equivalence-classes](https://github.com/ben9583/matrix-equivalence-classes)

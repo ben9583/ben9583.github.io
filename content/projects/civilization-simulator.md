@@ -1,6 +1,6 @@
 ---
-title: Civilization Simulator (civ)
-type: page
+title: "Civilization Simulator (civ)"
+type: "page"
 ---
 
 GitHub: [ben9583/civilization-simulator](https://github.com/ben9583/civilization-simulator)

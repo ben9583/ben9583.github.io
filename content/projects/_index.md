@@ -1,6 +1,6 @@
 ---
 title: "Projects"
-type: page
+type: "page"
 ---
 
 
