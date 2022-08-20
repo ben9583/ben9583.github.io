@@ -52,10 +52,12 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: "16"
-      - name: Build
+      - name: Install Workbox
         run: |
-          npm install
-          npm run build 
+          npm install -g workbox-cli
+      - name: Generate Service Worker
+        run: |
+          workbox generateSW workbox-config.js
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
