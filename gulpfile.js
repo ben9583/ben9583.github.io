@@ -62,7 +62,7 @@ gulp.task("generate-service-worker", () => {
         options: {
           cacheName: "fonts",
           expiration: {
-            maxEntries: 20,
+            maxEntries: 100,
             maxAgeSeconds: 31 * 24 * 60 * 60, // one month
           }
         }
@@ -75,10 +75,10 @@ gulp.task("generate-service-worker", () => {
         }
       },
       {
-        urlPattern: () => true,
+        urlPattern: /.*$/,
         handler: "NetworkFirst",
         options: {
-          cacheName: "fallback-probably-html",
+          cacheName: "fallback",
           expiration: {
             maxEntries: 100,
             maxAgeSeconds: 31 * 24 * 60 * 60 // 1 month
