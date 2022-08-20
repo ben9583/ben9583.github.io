@@ -9,11 +9,11 @@ gulp.task("generate-service-worker", () => {
     cacheId: "ben9583-pwa-cache",
     globDirectory: "./public", // the directory where static file is stored
     swDest: "./public/sw.js", // destination of sw.js file
-    globPatterns: ["**/*.{js,css,html,png,jpg,jpeg,gif,bmp,svg,ico,mp3,mp4,eot,ttf,woff,json,xml}"], // glob patterns to match files to cache
+    globPatterns: ["**/*"], // glob patterns to match files to cache
     navigateFallback: "/404.html", // fallback file
     runtimeCaching: [
       {
-        urlPattern: /\.(?:html|js)?$/,
+        urlPattern: /(\.(?:html|js))|(\/)?$/,
         handler: "NetworkFirst",
         options: {
           cacheName: "html-js",
