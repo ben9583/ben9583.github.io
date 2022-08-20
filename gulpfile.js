@@ -74,6 +74,17 @@ gulp.task("generate-service-worker", () => {
           cacheName: "json-xml",
         }
       },
+      {
+        urlPattern: () => true,
+        handler: "NetworkFirst",
+        options: {
+          cacheName: "fallback-probably-html",
+          expiration: {
+            maxEntries: 100,
+            maxAgeSeconds: 31 * 24 * 60 * 60 // 1 month
+          }
+        }
+      }
     ],
   });
 });
