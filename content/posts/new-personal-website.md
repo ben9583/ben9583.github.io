@@ -1,7 +1,7 @@
 ---
 title: "New Personal Website"
 date: 2022-08-18T16:15:00-07:00
-description: "I made this website you're looking at using the Hugo SSG"
+description: "I made this website you're looking at using the Hugo SSG."
 tags: ["Go", "Hugo", "meta"]
 type: "post"
 weight: 25
