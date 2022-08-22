@@ -7,5 +7,19 @@ module.exports = {
 	ignoreURLParametersMatching: [
 		/^utm_/,
 		/^fbclid$/
+	],
+	runtimeCaching: [
+		{
+			urlPattern: /^posts(\/)?$/,
+			handler: 'StaleWhileRevalidate',
+		},
+		{
+			urlPattern: /^projects(\/)?$/,
+			handler: 'StaleWhileRevalidate',
+		},
+		{
+			urlPattern: /^tags(\/)?$/,
+			handler: 'StaleWhileRevalidate',
+		}
 	]
 };
