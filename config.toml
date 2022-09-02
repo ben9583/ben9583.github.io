@@ -1,5 +1,5 @@
 baseURL = "https://ben9583.com"
-title = "Ben Plate — Software Engineer"
+title = "Ben Plate"
 theme = "gokarna"
 defaultContentLanguage = "en"
 languageCode = "en"
@@ -10,7 +10,7 @@ enableRobotsTXT = true
 
 [params]
   footer = "Ben Plate"
-  description = "CS Student @ UC Berkeley"
+  description = "Software Engineer, CS Student @ UC Berkeley"
   avatarURL = "/images/avatar.webp"
   avatarSize = "size-xl"
   customHeadHTML = """
