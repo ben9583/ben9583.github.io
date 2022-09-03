@@ -11,15 +11,15 @@ module.exports = {
 	runtimeCaching: [
 		{
 			urlPattern: /^posts(\/)?$/,
-			handler: 'StaleWhileRevalidate',
+			handler: 'NetworkFirst',
 		},
 		{
 			urlPattern: /^projects(\/)?$/,
-			handler: 'StaleWhileRevalidate',
+			handler: 'NetworkFirst',
 		},
 		{
 			urlPattern: /^tags(\/)?$/,
-			handler: 'StaleWhileRevalidate',
+			handler: 'NetworkFirst',
 		}
 	]
 };
