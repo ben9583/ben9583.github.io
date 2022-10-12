@@ -12,6 +12,8 @@ enableRobotsTXT = true
   footer = "Ben Plate"
   description = "Software Engineer, CS Student @ UC Berkeley"
   avatarURL = "/images/avatar.webp"
+  aboutImage = "/images/about/ben_asian_ghetto.webp"
+  aboutImageDescription = "Me at Berkeley's \"Asian Ghetto\""
   avatarSize = "size-xl"
   customHeadHTML = """
     <meta name="google-site-verification" content="yichU42T6JR2md_yblNykpuTZ7FBd8R5lb6u7T5yqxE" />
