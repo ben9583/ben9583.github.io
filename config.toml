@@ -47,19 +47,6 @@ enableRobotsTXT = true
         });
       });
     </script>
-    <!-- PWA -->
-    <script>
-    if ("serviceWorker" in navigator) {
-      window.addEventListener("load", () => {
-        navigator.serviceWorker
-        .register("/sw.js")
-        .then((swReg) => {})
-        .catch((err) => {
-        console.error("Service Worker Error", err);
-        });
-      });
-    }
-    </script>
   """
   socialIcons = [
     {name = "linkedin", url = "https://linkedin.com/in/benplate"},
