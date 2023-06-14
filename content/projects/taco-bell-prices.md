@@ -63,7 +63,7 @@ cd taco-bell-prices
 yarn
 ```
 
-This will download the project and install the `npm` packages. It will also compy the `.env.template` file to `.env` filling in the environment variables as needed. 
+This will download the project and install the `npm` packages. It will also copy the `.env.template` file to `.env` filling in the environment variables as needed. 
 
 ## Note About Getting National Pricing Data
 
