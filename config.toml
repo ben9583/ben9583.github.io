@@ -80,12 +80,6 @@ enableRobotsTXT = true
     weight = 6
 
   [[menu.main]]
-    identifier = "github"
-    pre = "<span data-feather='github'></span>"
-    url = "https://github.com/ben9583"
-    weight = 7
-
-  [[menu.main]]
     identifier = "rss"
     pre = "<span data-feather='rss'></span>"
     url = "/index.xml"
