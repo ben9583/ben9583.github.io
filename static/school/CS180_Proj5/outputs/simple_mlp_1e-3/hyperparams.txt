@@ -1,0 +1,2 @@
+learning-rate: 1e-3
+num-sinusoids: 64
