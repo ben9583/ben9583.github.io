@@ -19,6 +19,10 @@ A chess game I programmed in Java with support for AI, including neural networks
 A hexagonal, zero-player civilization simulator game programmed in Python with PyGame and Java.
 
 ---
+# [Uber Eats Button](/projects/uber-eats-button)
+A physical, big red button that orders a random meal to your house
+
+---
 # [MC_DepthNN](/projects/mc-depthnn/)
 A neural network that inputs an image from Minecraft and outputs a depth estimation.
 
